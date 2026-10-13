@@ -353,6 +353,7 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
     <div class="chart-card">
       <h3>Pólizas — Cobertura Actual vs. Recomendada</h3>
       <canvas id="chartPolizas"></canvas>
+      <p style="font-size:10.5px;color:var(--secondary);margin-top:8px;line-height:1.5;">RCE y Manejo/Infidelidad se miden en SMMLV y en meses de recaudo respectivamente — no son comparables en una escala porcentual del contrato y se presentan solo en la tabla de la pestaña "Pólizas y Garantías".</p>
     </div>
   </div>
 
@@ -401,31 +402,32 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
       <div class="finding-card crit" onclick="toggleCard(this)">
         <div class="finding-header">
           <span class="status-badge badge-crit">Crítico</span>
-          <span class="finding-title">Terminación unilateral con 30 días contradice la facultad del RPH</span>
+          <span class="finding-title">Terminación unilateral con 30 días contradice la facultad del Consejo</span>
           <span class="finding-clause">Cláusula 12-B</span>
           <span class="chevron">▼</span>
         </div>
         <div class="finding-body">
           <h4>Descripción</h4>
-          <p>La Cláusula 12-B exige aviso previo de treinta (30) días para terminar unilateralmente el contrato. Sin embargo, el Reglamento de Propiedad Horizontal establece que el Consejo puede terminar el contrato en cualquier momento. El contrato privado restringe así una facultad que el RPH —y la Ley 675 de 2001— concede al Consejo, generando una ambigüedad jurídica aprovechable por el contratista.</p>
+          <p>La Cláusula 12-B exige aviso previo de treinta (30) días para terminar unilateralmente el contrato, sin distinguir si la terminación la ejerce el Consejo de Administración. Sin embargo, el Reglamento de Propiedad Horizontal del Conjunto faculta expresamente al Consejo para remover al Administrador <strong>libremente y en cualquier momento</strong>, sin exigir preaviso. El contrato privado restringe así una facultad que el RPH concede al Consejo, generando una ambigüedad jurídica aprovechable por el contratista.</p>
           <h4>Normativa Aplicable</h4>
           <div class="norm-cite">
-            <div class="norm-title">Remoción del administrador por el Consejo de Administración</div>
-            <div><span class="status-badge badge-ley" style="font-size:10px;">Ley 675/2001</span> &nbsp;Art. 51, párrafo 2</div>
-            <div class="norm-detail">"El administrador podrá ser removido en cualquier momento por la Asamblea General de Propietarios, o por el Consejo de Administración cuando sea éste quien lo hubiere designado, conforme al reglamento de propiedad horizontal."</div>
+            <div class="norm-title">Designación del administrador por el Consejo de Administración</div>
+            <div><span class="status-badge badge-ley" style="font-size:10px;">Ley 675/2001</span> &nbsp;Art. 50 — Naturaleza del administrador</div>
+            <div class="norm-detail">"La representación legal de la persona jurídica y la administración del edificio o conjunto corresponderán a un administrador designado por la asamblea general de propietarios... salvo en aquellos casos en que exista el consejo de administración, donde será elegido por dicho órgano." — es la base legal que habilita al Consejo a designar (y, correlativamente, remover) al Administrador cuando asume esa función.</div>
           </div>
           <div class="norm-cite">
-            <div class="norm-title">Facultad del Consejo para designar y remover administrador</div>
-            <div><span class="status-badge badge-rph" style="font-size:10px;">RPH</span> &nbsp;Cláusula pertinente del Conjunto Los Cedros</div>
-            <div class="norm-detail">El RPH delega en el Consejo la facultad de terminar el contrato en cualquier momento — facultad no restringible por un contrato de orden privado inferior.</div>
+            <div class="norm-title">Remoción libre del Administrador por el Consejo, sin preaviso</div>
+            <div><span class="status-badge badge-rph" style="font-size:10px;">RPH</span> &nbsp;Escritura Pública 4908 de 2015, Art. 87, Num. 87.20</div>
+            <div class="norm-detail">"Nombrar y remover libremente al Administrador y a su suplente cuando fuere el caso, para períodos prorrogables de un (1) año, y fijarle su remuneración." — es la facultad expresa y verificable que el RPH de Los Cedros otorga al Consejo, sin exigir preaviso ni plazo mínimo alguno.</div>
           </div>
           <h4>Riesgos</h4>
           <ul>
-            <li><strong>Ambigüedad jurídica:</strong> si el Consejo termina inmediatamente (como lo faculta el RPH), el contratista podría alegar incumplimiento del aviso de 30 días y reclamar la cláusula penal.</li>
-            <li><strong>Administrador problemático protegido 30 días:</strong> ante irregularidades graves, la copropiedad puede verse obligada a mantener al administrador en funciones mientras tramita la terminación.</li>
+            <li><strong>Ambigüedad jurídica:</strong> si el Consejo remueve al contratista de forma inmediata (como lo faculta el Art. 87.20 del RPH), el contratista podría alegar incumplimiento del aviso de 30 días pactado en la Cláusula 12-B y reclamar la cláusula penal.</li>
+            <li><strong>Administrador problemático protegido 30 días:</strong> ante irregularidades graves, la copropiedad puede verse obligada a mantener al contratista en funciones mientras tramita la terminación conforme al contrato.</li>
           </ul>
         </div>
       </div>
+
 
       <div class="finding-card crit" onclick="toggleCard(this)">
         <div class="finding-header">
@@ -609,7 +611,7 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
       </div>
 
       <div class="footer-note">
-        <strong>Nota metodológica:</strong> Análisis desde la perspectiva de la copropiedad como contratante, conforme Ley 675/2001 y estándares NTS SI 02. Consulte con asesor jurídico antes de firmar o modificar el contrato.
+        <strong>Nota metodológica:</strong> Análisis desde la perspectiva de la copropiedad como contratante, conforme a la Ley 675/2001, el Reglamento de Propiedad Horizontal del Conjunto (Escritura Pública 4908 de 2015) y estándares NTS SI 02. Las citas al RPH corresponden a la escritura vigente al momento de este análisis; se recomienda verificar que no exista una reforma posterior registrada. Consulte con asesor jurídico antes de firmar o modificar el contrato.
       </div>
     </div>
 
@@ -651,7 +653,7 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
               <td class="tag-actual">"Proporcional" (sin monto)</td>
               <td><strong class="tag-actual">INDEFINIDA</strong></td>
               <td class="tag-required">Mínimo 200 SMMLV</td>
-              <td>200 SMMLV ≈ $284.700.000 (SMMLV 2026: $1.423.500). Debe amparar daños a propietarios, visitantes y terceros derivados de la gestión.</td>
+              <td>200 SMMLV ≈ $350.181.000 (SMMLV 2026: $1.750.905, Decreto 1469 de 2025). Debe amparar daños a propietarios, visitantes y terceros derivados de la gestión.</td>
             </tr>
             <tr>
               <td><strong>E. Manejo / Infidelidad ❌</strong></td>
@@ -697,12 +699,12 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
         <div class="clause-panels">
           <div class="clause-panel">
             <div class="clause-panel-label">Texto Actual (Desfavorable)</div>
-            <p><strong>B. Terminación Unilateral sin Justa Causa:</strong> Cualquiera de las partes podrá dar por terminado el contrato dando un aviso previo, escrito y justificado con una antelación mínima de <strong>treinta (30) días calendario</strong>, sin que haya lugar al cobro de indemnizaciones.</p>
-            <br><p style="font-size:11px;color:var(--crit);">⚠ Restringe la facultad del RPH para terminar en cualquier momento.</p>
+            <p><strong>B. Terminación Unilateral Anticipada sin Justa Causa</strong> <em>(cita literal)</em>: "Cualquiera de las partes podrá dar por terminado el contrato de manera anticipada dando un aviso previo, escrito y justificado a la otra parte con una antelación mínima de <strong>treinta (30) días calendario</strong>, sin que haya lugar al cobro de indemnizaciones, multas, daños o perjuicios por el ejercicio de esta facultad."</p>
+            <br><p style="font-size:11px;color:var(--crit);">⚠ Restringe, sin distinción, la facultad de remoción libre que el Art. 87.20 del RPH otorga al Consejo.</p>
           </div>
           <div class="clause-panel">
             <div class="clause-panel-label">Texto Sugerido</div>
-            <p><strong>B.1. Terminación por el Contratante:</strong> El CONTRATANTE, a través del Consejo de Administración, podrá dar por terminado el contrato <strong>en cualquier momento</strong> mediante comunicación escrita, en ejercicio de la facultad del RPH y el artículo 51 de la Ley 675 de 2001, sin indemnización alguna. El CONTRATISTA dispondrá de quince (15) días hábiles para ejecutar el empalme de salida.</p>
+            <p><strong>B.1. Terminación por el Contratante:</strong> El CONTRATANTE, a través del Consejo de Administración, podrá dar por terminado el contrato <strong>en cualquier momento</strong> mediante comunicación escrita, en ejercicio de la facultad conferida al Consejo por el Artículo 87, Numeral 87.20 del RPH (Escritura Pública 4908 de 2015) y el Artículo 50 de la Ley 675 de 2001, sin indemnización alguna. El CONTRATISTA dispondrá de quince (15) días hábiles para ejecutar el empalme de salida.</p>
             <br>
             <p><strong>B.2. Terminación por el Contratista:</strong> Mediante aviso previo escrito con treinta (30) días de antelación, garantizando continuidad del servicio durante el preaviso.</p>
           </div>
@@ -722,7 +724,7 @@ hr.divider { border:none; border-top:1px solid var(--border-subtle); margin:22px
           </div>
           <div class="clause-panel">
             <div class="clause-panel-label">Texto Sugerido</div>
-            <p>Penalidad equivalente al <strong>doscientos por ciento (200%) del valor mensual</strong> (dos meses de honorarios = $23.000.000).</p>
+            <p>Penalidad equivalente a <strong>dos (2) mensualidades de honorarios</strong> ($23.000.000).</p>
             <br>
             <p>El incumplimiento de empalme, diagnóstico o entrega de accesos causará, de forma autónoma, una penalidad adicional del <strong>50% del valor mensual por cada eje incumplido</strong>.</p>
           </div>
@@ -938,10 +940,10 @@ window.addEventListener('load', () => {
   new Chart(ctx2, {
     type: 'bar',
     data: {
-      labels: ['Cumplimiento', 'Calidad', 'Salarios', 'RCE', 'Manejo'],
+      labels: ['Cumplimiento', 'Calidad', 'Salarios'],
       datasets: [
-        { label: 'Actual (%)', data: [20, 10, 5, 0, 0], backgroundColor: 'rgba(139,26,43,0.75)', borderRadius: 4 },
-        { label: 'Recomendado (%)', data: [30, 15, 10, 15, 5], backgroundColor: 'rgba(45,102,71,0.75)', borderRadius: 4 }
+        { label: 'Actual (%)', data: [20, 10, 5], backgroundColor: 'rgba(139,26,43,0.75)', borderRadius: 4 },
+        { label: 'Recomendado (%)', data: [30, 15, 10], backgroundColor: 'rgba(45,102,71,0.75)', borderRadius: 4 }
       ]
     },
     options: {
